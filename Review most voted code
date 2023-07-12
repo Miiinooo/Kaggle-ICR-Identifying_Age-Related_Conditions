@@ -1,7 +1,9 @@
-!pip download tabpfn --no-deps -d pip-packages
-!pip install tabpfn
-from tabpfn import TabPFNClassifier
-TabPFNClassifier(N_ensemble_configurations=64,device='cuda:0')
+**< 학습 코드 내용 >**
 
-!mv /opt/conda/lib/python3.10/site-packages/tabpfn/models_diff/prior_diff_real_checkpoint_n_0_epoch_100.cpkt pip-packages/
-!zip -r pip-packages.zip pip-packages
+notebook based on
+
+SAMUEL https://www.kaggle.com/code/muelsamu/simple-tabpfn-approach-for-score-of-15-in-1-min
+
+@nomuraryota https://www.kaggle.com/nomuraryota work
+
+- SAMUEL의 파일에 기초로 작성하였음|
