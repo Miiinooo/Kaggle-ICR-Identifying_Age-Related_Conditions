@@ -23,3 +23,17 @@ The approach contains the following components:
 3. **NaN값을 대체하기 위해 중앙값 사용**
 4. **Training data에서는 시간열을 사용하고 Test에서는 Training의 최대시간에 +1을 사용**
 5. **Greeks에 있는 모든 4개의 Class를 사용할 것.**
+
+# UNCOMMENT first with internet option turned on
+# Use GPU env
+
+# !pip download tabpfn --no-deps -d pip-packages
+# !pip install tabpfn
+# from tabpfn import TabPFNClassifier
+# TabPFNClassifier(N_ensemble_configurations=64,device='cuda:0')
+
+# !mv /opt/conda/lib/python3.10/site-packages/tabpfn/models_diff/prior_diff_real_checkpoint_n_0_epoch_100.cpkt pip-packages/
+# !zip -r pip-packages.zip pip-packages
+
+# now you need to download the zip and upload it as dataset with the plus in the top left
+# then you need to add it to the notebook as data on the right, and name it `pip-packages-icr`
